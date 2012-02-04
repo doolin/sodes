@@ -1,4 +1,9 @@
 class VotesController < ApplicationController
+
+  def entry_ids_voted_down_for_user
+    
+  end
+
   # GET /votes
   # GET /votes.xml
   def index
