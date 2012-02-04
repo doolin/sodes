@@ -1,6 +1,7 @@
 require File.dirname(__FILE__) + '/../service'
-require 'spec'
-require 'spec/interop/test'
+require 'test/unit'
+require 'rspec'
+#require 'rspec/interop/test'
 require 'rack/test'
 
 set :environment, :test
@@ -11,10 +12,11 @@ def app
 end
 
 describe "service" do
+#=begin
   before(:each) do
-    Use.delete_all
+    User.delete_all
   end
-
+#=end
   describe "GET on /api/v1/users/:id" do
 
     before(:each) do
@@ -26,36 +28,41 @@ describe "service" do
     end
 
     it "should return a user by name" do
-      get '/api/v1/users/paul'
-      last_response.should be_ok
-      attributes = JSON.pars(last_response.body)
-      attributes['name'].should == 'paul'
+      get '/api/v1/users/paul' do
+        last_response.should be_ok
+        attributes = JSON.pars(last_response.body)
+        attributes['name'].should == 'paul'
+      end
     end
 
     it "should return a user with an email" do
-      get '/api/v1/users/paul'
-      last_response.should be_ok
-      attributes = JSON.pars(last_response.body)
-      attributes['email'].should == 'paul@pauldix.net'
+      get '/api/v1/users/paul' do
+        last_response.should be_ok
+        attributes = JSON.pars(last_response.body)
+        attributes['email'].should == 'paul@pauldix.net'
+      end
     end
 
     it "should not return a user's password" do
-      get '/api/v1/users/paul'
-      last_response.should be_ok
-      attributes = JSON.pars(last_response.body)
-      attributes.should_not have_key('password')
+      get '/api/v1/users/paul' do
+        last_response.should be_ok
+        attributes = JSON.pars(last_response.body)
+        attributes.should_not have_key('password')
+      end
     end
 
     it "should return a user with a bio" do
-      get '/api/v1/users/paul'
-      last_response.should be_ok
-      attributes = JSON.pars(last_response.body)
-      attributes['bio'].should == 'rubyist'
+      get '/api/v1/users/paul' do
+        last_response.should be_ok
+        attributes = JSON.pars(last_response.body)
+        attributes['bio'].should == 'rubyist'
+      end
     end
 
     it "should return a 404 for a user that doesn't exist" do
-      get '/api/v1/users/foo'
-      last_response.status.should == 404
+      get '/api/v1/users/foo' do
+        last_response.status.should == 404
+      end
     end
 
   end
