@@ -8,6 +8,7 @@ set :environment, :test
 #Test::Unit::TestCase.send :include, Rack::Test::Methods
 
 
+
 describe "service" do
   include Rack::Test::Methods
 
@@ -86,6 +87,7 @@ describe "service" do
         attributes["email"].should == 'no spam'
         attributes["bio"].should == 'southern belle'
       #end
+      delete '/api/v1/users/trotter'
     end
   end
 

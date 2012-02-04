@@ -9,6 +9,13 @@ env = env_arg || ENV['SINATRA_ENV'] || 'development'
 databases = YAML.load_file('config/database.yml')
 ActiveRecord::Base.establish_connection(databases[env])
 
+if env == 'test'
+  puts "starting in test mode"
+  User.destroy_all
+  User.create(:name => "paul", :email => "paul@pauldix.net", :bio => "rubyist", :password => "strongpass")
+  User.create(:name => "bryan", :email => "no mo spam")
+end
+
 # HTTP entry points
 # get a user by name
 get '/api/v1/users/:name' do
