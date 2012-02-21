@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  type: 
+  feed_id: 1
+  followed_user_id: 1
+  entry_id: 1
+  content: MyText
+  following_user_id: 1
+
+two:
+  user_id: 1
+  type: 
+  feed_id: 1
+  followed_user_id: 1
+  entry_id: 1
+  content: MyText
+  following_user_id: 1
