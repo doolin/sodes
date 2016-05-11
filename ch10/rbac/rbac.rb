@@ -9,4 +9,24 @@ ActiveRecord::Base.establish_connection(
 )
 
 class RoleBased < ActiveRecord::Base
+  # This class is an interface for the other two and does not
+  # require a table
+  self.abstract_class = true
+
+  # Either find an existing object and update it of
+  # create a new object.
+  def self.find_and_update_or_create(attrs)
+    obj = find_by_name(attrs[:name])
+  else
+    create(attrs)
+  end
+
+  # we want to work with roles as an array
+  def roles
+    str = read_attribute(:roles)
+    str.split(/ *, */)
+  end
 end
+
+class User < RoleBased; end
+class Resource < RoleBased; end
