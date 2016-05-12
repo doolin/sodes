@@ -30,3 +30,13 @@ end
 
 class User < RoleBased; end
 class Resource < RoleBased; end
+
+# Run on port 3333 to make it easier to test with the
+# protected service.
+set :port, 3333
+
+# Handle user creation and updating
+post '/users' do
+  user = User.find_and_update_or_create(params)
+  user ? 'Created' : 'Failed'
+end
