@@ -17,9 +17,11 @@ class RoleBased < ActiveRecord::Base
   # create a new object.
   def self.find_and_update_or_create(attrs)
     obj = find_by_name(attrs[:name])
-  else
-    create(attrs)
-  end
+    if obj
+      update_attributes(attrs)
+    else
+      create(attrs)
+    end
 
   # we want to work with roles as an array
   def roles
@@ -39,4 +41,20 @@ set :port, 3333
 post '/users' do
   user = User.find_and_update_or_create(params)
   user ? 'Created' : 'Failed'
+end
+
+post '/resources' do
+  auth = Resource.find_and_update_or_create(params)
+  auth ? 'Created' : 'Failed'
+end
+
+# Tell whether a user is authorized for a given resource
+get '/users/:name/authorizations' do |name|
+  user_roles = User.find_by_name(name).roles rescue []
+  auth_roles = Resource.find_by_name(params[:resource]).roles rescue []
+
+  # if subtracting auth_roles from user_roles results in a shorter
+  # array, then at least one element in auth_roles is in user_roles.
+  authorized = (user_roles - auth_roles).length != user_roles.length
+  {authorized: authorized}.to_json
 end
