@@ -40,22 +40,28 @@ POSTing a User 11 PUTing a User 13 Deleting a User 15 Verifying a User
 
 # 2 An Introduction to Service-Oriented Design 27
 
-Use of Service-Oriented Design in the Wild 27
-Service-Oriented Design Versus Service-Oriented Architecture Versus
-RESTful-Oriented Architecture 28
-Making the Case for Service-Oriented Design 29
-Isolation 30 Robustness 34 Scalability 35 Agility 36 Interoperability 37
-Reuse 38
-Conclusion 38
+* Use of Service-Oriented Design in the Wild
+
+* Service-Oriented Design Versus Service-Oriented Architecture Versus
+RESTful-Oriented Architecture
+
+* Making the Case for Service-Oriented Design
+
+  * Isolation, Robustness, Scalability, Agility, Interoperability, Reuse
+
+* Conclusion 38
 
 
 # 3 Case Study: Social Feed Reader 41
 
-A Typical Rails Application 41
-The Rails Social Feed Reader Application 45
+* A Typical Rails Application
+
+* The Rails Social Feed Reader Application
 Features 46
 Current Setup 46 Converting to Services 54
+
 Segmenting into Services 54
+
 Breaking Up the Application into Services 54 Conclusion 58
 
 # 4 Service and API Design 59
