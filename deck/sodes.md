@@ -165,7 +165,7 @@ SSL for Authentication 198 Authentication for Rails Applications 199
 Authorization 201 Firewalls 201
 An RBAC Authorization Service 203 Encryption 209
 SSL for Encryption 210
-177
+
 Public/Private Key Pairs for Encryption 210 Conclusion 214
 
 # 11 Messaging 215
@@ -175,13 +175,12 @@ Synchronous Versus Asynchronous Messaging 216 Queues 217
 Message Formats 217
 RabbitMQ and AMQP 217 Queues in RabbitMQ 218
 Exchanges and Bindings Durability and Persistence 223 Client Libraries
-224
+
 Synchronous Reads, Asynchronous Writes 227 HTTP-Based Reads 227
 Messaging-Based Writes 227 The CAP Theorem 230
 Eventual Consistency 231 Designing Around Consistency 232
-218
-xii
-Contents
+
+
 Data Is the API 234
 Operations on Fields 234 Modifications to Field Operations 235
 Conclusion 236
@@ -189,29 +188,37 @@ Conclusion 236
 
 # 12 Web Hooks and External Services 237
 
-Web Hooks 238 PubSubHubbub 239
+* Web Hooks 238 PubSubHubbub 239
 Receiving Web Hooks 240
 Providing Web Hooks 242
 Strategies for Dealing with Failure 244
-OAuth 245
+
+* OAuth 245
 Implementing an OAuth Consumer 246 Implementing an OAuth Provider 249
-Integrating with External Services 251 Consuming Data 251
+
+* Integrating with External Services 251 Consuming Data 251
 Pushing Data 253
 The Request Lifecycle 254 Worker Processes 254
-Ensuring Performance and Reliability 258 Segregating Queues 259
+
+* Ensuring Performance and Reliability 258 Segregating Queues 259
 Metrics 259
-Throttling and Quotas 260 Conclusion 261
+Throttling and Quotas 260
+
+* Conclusion 261
 
 
 # Appendix RESTful Primer 263
 
 
-Roy Fielding’s REST 263 Constraints 264
+* Roy Fielding’s REST 263 Constraints 264
 Architectural Elements 264
-Architectural Views 265 REST and Resources 265
+Architectural Views 265
+
+* REST and Resources 265
 URIs and Addressability 266
 Representations 267
-HTTP and the Uniform Interface 268
-HTTP Methods 268 HTTP Headers 271 HTTP Status Codes 274
-Conclusion 275
-Index 277
+
+* HTTP and the Uniform Interface,
+HTTP Methods, HTTP Headers, HTTP Status Codes
+
+* Conclusion
