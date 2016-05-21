@@ -49,7 +49,7 @@ RESTful-Oriented Architecture
 
   * Isolation, Robustness, Scalability, Agility, Interoperability, Reuse
 
-* Conclusion 38
+* Conclusion
 
 
 # 3 Case Study: Social Feed Reader 41
@@ -64,28 +64,33 @@ Segmenting into Services 54
 
 Breaking Up the Application into Services 54 Conclusion 58
 
-# 4 Service and API Design 59
+# 4 Service and API Design
 
-Partitioning Functionality into Separate Services 59 Partitioning on
+* Partitioning Functionality into Separate Services: Partitioning on
 Iteration Speed 60 Partitioning on Logical Function 61 Partitioning on
 Read/Write Frequencies 62 Partitioning on Join Frequency 63
-Versioning Services 64
+
+* Versioning Services 64
 Including a Version in URIs 64
 Using Accept Headers for Versioning 65
-URIs and Interface Design 66 Successful Responses 68
+
+* URIs and Interface Design 66
+
+* Successful Responses 68
 HTTP Status Codes 68 HTTP Caching 69
 Successful Response Bodies 70
-Contents
-ix
-  Error Responses 72
+
+*  Error Responses 72
 HTTP Status Codes 72
-Error Response Bodies Handling Joins 73
-72
+Error Response Bodies
+
+* Handling Joins 73
 Storing References 73
 Joining at the Highest Level 74 Beware of Call Depth 75
-API Complexity 75 Atomic APIs 76
-Multi-Gets 76
-Multiple Models 77 Conclusion 78
+
+* API Complexity: Atomic APIs, Multi-Gets, Multiple Models
+
+* Conclusion
 
 
 # 5 Implementing Services 79
