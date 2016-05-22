@@ -95,14 +95,22 @@ Joining at the Highest Level 74 Beware of Call Depth 75
 
 # 5 Implementing Services 79
 
-The Vote Service 79
+* The Vote Service:
 A Multi-Get Interface 81 The Vote Interface 82 API Design Guidelines
-Models 86 Rails 88
+
+
+* Models
+
+* Rails:
 Rails 2.3 Routes 88 Rails 3 Routes 89 The Rails Controller
-Sinatra 95
-Rack 100 Conclusion 106
-85
-90
+
+* Sinatra
+
+* Rack
+
+* Conclusion
+
+
 
 
 # 6 Connecting to Services 107
