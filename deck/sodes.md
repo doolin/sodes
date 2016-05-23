@@ -115,15 +115,14 @@ Rails 2.3 Routes 88 Rails 3 Routes 89 The Rails Controller
 
 # 6 Connecting to Services 107
 
-Blocking I/O, Threading, and Parallelism Asynchronous I/O 108
-Multi-threading 108 Typhoeus 109
-Making Single Requests 109
-107
-Making Simultaneous Requests 111 Multi-threaded Requests 113
-JRuby 115
-Logging for Performance 117
-x
-Contents
+* Blocking I/O, Threading, and Parallelism:
+  Asynchronous I/O, Multi-threading
+* Typhoeus: Making Single Requests,
+  Making Simultaneous Requests
+* Multi-threaded Requests
+* JRuby
+* Logging for Performance 117
+
 
 
 #  7 Developing Service Client Libraries
@@ -140,9 +139,9 @@ Wrapping Parsed Results 130
 ActiveModel 132 Validations 132
 Serialization 134 Connection and Request Logic 136
 
-
 Data Reads 136
 Data Writes 142 Mocks, Stubs, and Tests 143 Conclusion 146
+
 
 # 8 Load Balancing and Caching
 
