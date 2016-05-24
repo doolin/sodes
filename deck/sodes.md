@@ -11,34 +11,22 @@ def foo
 end
 ~~~~
 
-# 1 Implementing and Consuming Your First Service 1
+# 1 Implementing and Consuming Your First Service
 
 * What’s a Service?
 * Service Requirements
-* The Ruby Tool Set
+* The Ruby Tool Set: Sinatra, ActiveRecord, JSON, Typhoeus, Rspec
 
-  * Sinatra
-  * ActiveRecord
-  * JSON
-  * Typhoeus
-  * Rspec
+* The User Service Implementation: Using GET, POSTing a User,
+PUTing a User, Deleting a User, Verifying a User
 
-* The User Service Implementation
- Using GET 6
-POSTing a User 11 PUTing a User 13 Deleting a User 15 Verifying a User
-
-
-* Implementing the Client Library 18 Finding a User 18
- Creating a User Updating a User Destroying a User 24 Verifying a User
-24
-
+* Implementing the Client Library, Finding a User, Creating a User,
+ Updating a User, Destroying a User, Verifying a User
 
 * Putting It All Together
-* Conclusion
 
 
-
-# 2 An Introduction to Service-Oriented Design 27
+# 2 An Introduction to Service-Oriented Design
 
 * Use of Service-Oriented Design in the Wild
 
@@ -49,51 +37,47 @@ RESTful-Oriented Architecture
 
   * Isolation, Robustness, Scalability, Agility, Interoperability, Reuse
 
-* Conclusion
 
-
-# 3 Case Study: Social Feed Reader 41
+# 3 Case Study: Social Feed Reader
 
 * A Typical Rails Application
 
-* The Rails Social Feed Reader Application
-Features 46
-Current Setup 46 Converting to Services 54
+* The Rails Social Feed Reader Application,
+Features, Current Setup
 
-Segmenting into Services 54
-
-Breaking Up the Application into Services 54 Conclusion 58
+* Converting to Services: Segmenting into Services,
+Breaking Up the Application into Services
 
 # 4 Service and API Design
 
 * Partitioning Functionality into Separate Services: Partitioning on
 Iteration Speed 60 Partitioning on Logical Function 61 Partitioning on
-Read/Write Frequencies 62 Partitioning on Join Frequency 63
+Read/Write Frequencies 62 Partitioning on Join Frequency
 
-* Versioning Services 64
-Including a Version in URIs 64
-Using Accept Headers for Versioning 65
+* Versioning Services
+Including a Version in URIs
+Using Accept Headers for Versioning
 
-* URIs and Interface Design 66
+* URIs and Interface Design
 
-* Successful Responses 68
-HTTP Status Codes 68 HTTP Caching 69
-Successful Response Bodies 70
+* Successful Responses
+HTTP Status Codes 68 HTTP Caching
+Successful Response Bodies
 
-*  Error Responses 72
-HTTP Status Codes 72
+*  Error Responses
+HTTP Status Codes
 Error Response Bodies
 
-* Handling Joins 73
-Storing References 73
-Joining at the Highest Level 74 Beware of Call Depth 75
+* Handling Joins
+Storing References
+Joining at the Highest Level 74 Beware of Call Depth
 
 * API Complexity: Atomic APIs, Multi-Gets, Multiple Models
 
 * Conclusion
 
 
-# 5 Implementing Services 79
+# 5 Implementing Services
 
 * The Vote Service:
 A Multi-Get Interface 81 The Vote Interface 82 API Design Guidelines
