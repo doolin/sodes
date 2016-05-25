@@ -105,7 +105,7 @@ Rails 2.3 Routes 88 Rails 3 Routes 89 The Rails Controller
   Making Simultaneous Requests
 * Multi-threaded Requests
 * JRuby
-* Logging for Performance 117
+* Logging for Performance
 
 
 
@@ -114,17 +114,16 @@ Rails 2.3 Routes 88 Rails 3 Routes 89 The Rails Controller
 Handling Error Conditions 118
 Testing and Mocking Service Calls 119 Requests in Development
 Environments 121 Conclusion 121
-Developing Service Client Libraries 123
-Packaging 123 Jeweler 124
-Building and Deploying a Library 127 Parsing Logic 127
-The JSON Gem 128
-YAJL Ruby 129
-Wrapping Parsed Results 130
-ActiveModel 132 Validations 132
-Serialization 134 Connection and Request Logic 136
 
-Data Reads 136
-Data Writes 142 Mocks, Stubs, and Tests 143 Conclusion 146
+
+# 7 Developing Service Client Libraries
+
+* Packaging: Jeweler, Building and Deploying a Library
+* Parsing Logic: The JSON Gem, YAJL Ruby,
+Wrapping Parsed Results
+* ActiveModel: Validations, Serialization
+* Connection and Request Logic: Data Reads, Data Writes
+* Mocks, Stubs, and Tests
 
 
 # 8 Load Balancing and Caching
@@ -145,11 +144,13 @@ Conclusion 166
 
 #  9 Parsing XML for Legacy Services 167
 
-XML 167
+* XML: 167
 REXML 170
-Nokogiri 174 SOAP 177
+Nokogiri 174
+
+* SOAP: 177
 Exploring Web Services with a WSDL File
-Making Requests 180 Conclusion 184
+Making Requests
 
 
 # 10 Security 185
