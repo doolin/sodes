@@ -107,13 +107,10 @@ Rails 2.3 Routes 88 Rails 3 Routes 89 The Rails Controller
 * JRuby
 * Logging for Performance
 
-
-
-#  7 Developing Service Client Libraries
-
-Handling Error Conditions 118
-Testing and Mocking Service Calls 119 Requests in Development
-Environments 121 Conclusion 121
+* Handling Error Conditions
+* Testing and Mocking Service Calls
+* Requests in Development
+* Environments
 
 
 # 7 Developing Service Client Libraries
@@ -155,15 +152,9 @@ Making Requests
 
 # 10 Security 185
 
-Authentication 185
-HTTP Authentication 186
-Signing Requests 187
-SSL for Authentication 198 Authentication for Rails Applications 199
-Authorization 201 Firewalls 201
-An RBAC Authorization Service 203 Encryption 209
-SSL for Encryption 210
-
-Public/Private Key Pairs for Encryption 210 Conclusion 214
+* Authentication 185 HTTP Authentication 186 Signing Requests 187, SSL for Authentication 198 Authentication for Rails Applications 199
+* Authorization 201 Firewalls 201 An RBAC Authorization Service 203
+* Encryption: SSL for Encryption 210 Public/Private Key Pairs for Encryption
 
 # 11 Messaging 215
 
