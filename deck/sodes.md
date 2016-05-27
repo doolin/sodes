@@ -141,20 +141,18 @@ Conclusion 166
 
 #  9 Parsing XML for Legacy Services 167
 
-* XML: 167
-REXML 170
-Nokogiri 174
+* XML: REXM, Nokogiri
 
-* SOAP: 177
-Exploring Web Services with a WSDL File
+* SOAP: Exploring Web Services with a WSDL File,
 Making Requests
 
 
 # 10 Security 185
 
-* Authentication 185 HTTP Authentication 186 Signing Requests 187, SSL for Authentication 198 Authentication for Rails Applications 199
-* Authorization 201 Firewalls 201 An RBAC Authorization Service 203
-* Encryption: SSL for Encryption 210 Public/Private Key Pairs for Encryption
+* Authentication: HTTP Authentication, Signing Requests,
+  SSL for Authentication, Authentication for Rails Applications
+* Authorization, Firewalls, An RBAC Authorization Service
+* Encryption: SSL for Encryption, Public/Private Key Pairs for Encryption
 
 # 11 Messaging 215
 
