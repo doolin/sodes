@@ -156,20 +156,16 @@ Making Requests
 
 # 11 Messaging 215
 
-What Is Messaging? 215
-Synchronous Versus Asynchronous Messaging 216 Queues 217
-Message Formats 217
-RabbitMQ and AMQP 217 Queues in RabbitMQ 218
-Exchanges and Bindings Durability and Persistence 223 Client Libraries
+* What Is Messaging?: Synchronous Versus Asynchronous Messaging,
+Queues, Message Formats
+* RabbitMQ and AMQP, Queues in RabbitMQ, Exchanges and Bindings,
+ Durability and Persistence, Client Libraries
 
-Synchronous Reads, Asynchronous Writes 227 HTTP-Based Reads 227
-Messaging-Based Writes 227 The CAP Theorem 230
-Eventual Consistency 231 Designing Around Consistency 232
+* Synchronous Reads, Asynchronous Writes: HTTP-Based Reads,
+Messaging-Based Writes
+* The CAP Theorem: Eventual Consistency, Designing Around Consistency
+* Data Is the API: Operations on Fields, Modifications to Field Operations
 
-
-Data Is the API 234
-Operations on Fields 234 Modifications to Field Operations 235
-Conclusion 236
 
 
 # 12 Web Hooks and External Services 237
