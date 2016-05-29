@@ -139,7 +139,7 @@ Conclusion 166
 
 
 
-#  9 Parsing XML for Legacy Services 167
+#  9 Parsing XML for Legacy Services
 
 * XML: REXM, Nokogiri
 
@@ -147,14 +147,14 @@ Conclusion 166
 Making Requests
 
 
-# 10 Security 185
+# 10 Security
 
 * Authentication: HTTP Authentication, Signing Requests,
   SSL for Authentication, Authentication for Rails Applications
 * Authorization, Firewalls, An RBAC Authorization Service
 * Encryption: SSL for Encryption, Public/Private Key Pairs for Encryption
 
-# 11 Messaging 215
+# 11 Messaging
 
 * What Is Messaging?: Synchronous Versus Asynchronous Messaging,
 Queues, Message Formats
@@ -168,25 +168,18 @@ Messaging-Based Writes
 
 
 
-# 12 Web Hooks and External Services 237
+# 12 Web Hooks and External Services
 
-* Web Hooks 238 PubSubHubbub 239
-Receiving Web Hooks 240
-Providing Web Hooks 242
-Strategies for Dealing with Failure 244
+* Web Hooks: PubSubHubbub, Receiving Web Hooks, Providing Web Hooks,
+Strategies for Dealing with Failure
 
-* OAuth 245
-Implementing an OAuth Consumer 246 Implementing an OAuth Provider 249
+* OAuth: Implementing an OAuth Consumer, Implementing an OAuth Provider 249
 
-* Integrating with External Services 251 Consuming Data 251
-Pushing Data 253
-The Request Lifecycle 254 Worker Processes 254
+* Integrating with External Services: Consuming Data,
+Pushing Data, The Request Lifecycle, Worker Processes
 
-* Ensuring Performance and Reliability 258 Segregating Queues 259
-Metrics 259
-Throttling and Quotas 260
-
-* Conclusion 261
+* Ensuring Performance and Reliability: Segregating Queues,
+Metrics, Throttling and Quotas
 
 
 # Appendix RESTful Primer 263
