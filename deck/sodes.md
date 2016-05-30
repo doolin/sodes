@@ -182,18 +182,14 @@ Pushing Data, The Request Lifecycle, Worker Processes
 Metrics, Throttling and Quotas
 
 
-# Appendix RESTful Primer 263
+# Appendix RESTful Primer
 
 
-* Roy Fielding’s REST 263 Constraints 264
-Architectural Elements 264
-Architectural Views 265
+* Roy Fielding’s REST: Constraints, Architectural Elements,
+Architectural Views
 
-* REST and Resources 265
-URIs and Addressability 266
-Representations 267
+* REST and Resources: URIs and Addressability, Representations
 
-* HTTP and the Uniform Interface,
+* HTTP and the Uniform Interface:
 HTTP Methods, HTTP Headers, HTTP Status Codes
 
-* Conclusion
