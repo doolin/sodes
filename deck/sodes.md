@@ -35,7 +35,7 @@ RESTful-Oriented Architecture
 
 * Making the Case for Service-Oriented Design
 
-  * Isolation, Robustness, Scalability, Agility, Interoperability, Reuse
+* Isolation, Robustness, Scalability, Agility, Interoperability, Reuse
 
 
 # 3 Case Study: Social Feed Reader
@@ -79,25 +79,17 @@ Joining at the Highest Level 74 Beware of Call Depth
 
 # 5 Implementing Services
 
-* The Vote Service:
-A Multi-Get Interface 81 The Vote Interface 82 API Design Guidelines
-
-
+* The Vote Service: A Multi-Get Interface, The Vote Interface,
+  API Design Guidelines
 * Models
-
-* Rails:
-Rails 2.3 Routes 88 Rails 3 Routes 89 The Rails Controller
-
+* Rails: Rails 2.3 Routes, Rails 3 Routes, The Rails Controller
 * Sinatra
-
 * Rack
 
-* Conclusion
 
 
 
-
-# 6 Connecting to Services 107
+# 6 Connecting to Services
 
 * Blocking I/O, Threading, and Parallelism:
   Asynchronous I/O, Multi-threading
