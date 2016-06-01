@@ -74,7 +74,6 @@ Joining at the Highest Level 74 Beware of Call Depth
 
 * API Complexity: Atomic APIs, Multi-Gets, Multiple Models
 
-* Conclusion
 
 
 # 5 Implementing Services
@@ -117,17 +116,12 @@ Wrapping Parsed Results
 
 # 8 Load Balancing and Caching
 
-Latency and Throughput 147 Load Balancing 148
-147
-Load Balancing Algorithms 148
-Implementing Load Balancing 152 Caching with Memcached 155
-The Memcached Client and ActiveRecord 156 Time-Based Expiration 158
-Manual Expiration 159
-Generational Cache Keys
-HTTP Caching 162
-Expiration-Based Caching 162 Validation-Based Caching 163 Implementing
-HTTP Caching 165
-Conclusion 166
+* Latency and Throughput
+* Load Balancing: Load Balancing Algorithms, Implementing Load Balancing
+* Caching with Memcached: The Memcached Client and ActiveRecord,
+Time-Based Expiration, Manual Expiration, Generational Cache Keys
+* HTTP Caching: Expiration-Based Caching, Validation-Based Caching,
+  Implementing HTTP Caching
 
 
 
