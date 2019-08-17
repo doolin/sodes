@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateSubcriptions < ActiveRecord::Migration
   def change
     create_table :subcriptions do |t|

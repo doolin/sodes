@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 class Follow < ActiveRecord::Base
   belongs_to :user
-  belongs_to :followed_user, :class_name => "User"
+  belongs_to :followed_user, class_name: 'User'
   after_create { |record| FollowActivity.write(record) }
 end
-

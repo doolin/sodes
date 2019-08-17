@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Socialfeed::Application.routes.draw do
   resources :users
 

@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class Activity < ActiveRecord::Base
   belongs_to :user
 
   def self.write(event)
     create(event.attributes)
     event.user.followers.each do |user|
-      create(event.attributes.merge(:following_user_id => user.id))
+      create(event.attributes.merge(following_user_id: user.id))
     end
   end
 end
@@ -20,6 +22,5 @@ class VoteActivity < Activity
 end
 
 class FollowActivity < Activity
-  belongs_to :followed_user, :class_name => "User"
+  belongs_to :followed_user, class_name: 'User'
 end
-
