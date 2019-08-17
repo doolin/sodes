@@ -1,0 +1,10 @@
+source 'http://rubygems.org'
+
+gem 'sinatra'
+gem 'activerecord'
+gem 'json'
+gem 'typhoeus'
+gem 'rspec'
+gem 'sqlite3-ruby'
+gem 'rack-test'
+gem 'pry'
