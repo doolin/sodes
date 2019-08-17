@@ -1,10 +1,10 @@
+# frozen_string_literal: true
+
 require 'rubygems'
 require 'typhoeus'
 require 'json'
 require 'active_record'
 require './models/user'
-
-
 
 class User
   class << self; attr_accessor :base_uri end
@@ -22,7 +22,7 @@ class User
 
   def self.create(attributes)
     response = Typhoeus::Request.post("#{base_uri}/api/v1/users",
-      :body => attributes.to_json)
+                                      body: attributes.to_json)
     if response.code == 200
       JSON.parse(response.body)
     else
@@ -33,7 +33,8 @@ class User
   def self.update(name, attributes)
     response = Typhoeus::Request.put(
       "#{base_uri}/api/v1/users/#{name}",
-      :body => attributes.to_json)
+      body: attributes.to_json
+    )
     if response.code == 200
       JSON.parse(response.body)
     else
@@ -48,7 +49,8 @@ class User
   def self.login(name, password)
     response = Typhoeus::Request.post(
       "#{base_uri}/api/v1/users/#{name}/sessions",
-      :body => {:password => password}.to_json)
+      body: { password: password }.to_json
+    )
     if response.code == 200
       JSON.parse(response.body)
     elsif response.code == 400
