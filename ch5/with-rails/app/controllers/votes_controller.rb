@@ -1,8 +1,7 @@
-class VotesController < ApplicationController
+# frozen_string_literal: true
 
-  def entry_ids_voted_down_for_user
-    
-  end
+class VotesController < ApplicationController
+  def entry_ids_voted_down_for_user; end
 
   # GET /votes
   # GET /votes.xml
@@ -11,7 +10,7 @@ class VotesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @votes }
+      format.xml  { render xml: @votes }
     end
   end
 
@@ -22,7 +21,7 @@ class VotesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @vote }
+      format.xml  { render xml: @vote }
     end
   end
 
@@ -33,7 +32,7 @@ class VotesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @vote }
+      format.xml  { render xml: @vote }
     end
   end
 
@@ -49,11 +48,11 @@ class VotesController < ApplicationController
 
     respond_to do |format|
       if @vote.save
-        format.html { redirect_to(@vote, :notice => 'Vote was successfully created.') }
-        format.xml  { render :xml => @vote, :status => :created, :location => @vote }
+        format.html { redirect_to(@vote, notice: 'Vote was successfully created.') }
+        format.xml  { render xml: @vote, status: :created, location: @vote }
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @vote.errors, :status => :unprocessable_entity }
+        format.html { render action: 'new' }
+        format.xml  { render xml: @vote.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -65,11 +64,11 @@ class VotesController < ApplicationController
 
     respond_to do |format|
       if @vote.update_attributes(params[:vote])
-        format.html { redirect_to(@vote, :notice => 'Vote was successfully updated.') }
+        format.html { redirect_to(@vote, notice: 'Vote was successfully updated.') }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @vote.errors, :status => :unprocessable_entity }
+        format.html { render action: 'edit' }
+        format.xml  { render xml: @vote.errors, status: :unprocessable_entity }
       end
     end
   end

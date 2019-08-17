@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class VotesControllerTest < ActionController::TestCase
@@ -5,43 +7,43 @@ class VotesControllerTest < ActionController::TestCase
     @vote = votes(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get :index
     assert_response :success
     assert_not_nil assigns(:votes)
   end
 
-  test "should get new" do
+  test 'should get new' do
     get :new
     assert_response :success
   end
 
-  test "should create vote" do
+  test 'should create vote' do
     assert_difference('Vote.count') do
-      post :create, :vote => @vote.attributes
+      post :create, vote: @vote.attributes
     end
 
     assert_redirected_to vote_path(assigns(:vote))
   end
 
-  test "should show vote" do
-    get :show, :id => @vote.to_param
+  test 'should show vote' do
+    get :show, id: @vote.to_param
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, :id => @vote.to_param
+  test 'should get edit' do
+    get :edit, id: @vote.to_param
     assert_response :success
   end
 
-  test "should update vote" do
-    put :update, :id => @vote.to_param, :vote => @vote.attributes
+  test 'should update vote' do
+    put :update, id: @vote.to_param, vote: @vote.attributes
     assert_redirected_to vote_path(assigns(:vote))
   end
 
-  test "should destroy vote" do
+  test 'should destroy vote' do
     assert_difference('Vote.count', -1) do
-      delete :destroy, :id => @vote.to_param
+      delete :destroy, id: @vote.to_param
     end
 
     assert_redirected_to votes_path
