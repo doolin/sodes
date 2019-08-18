@@ -9,9 +9,9 @@ describe 'client' do
 
   it 'should get a user' do
     user = User.find_by(name: 'paul')
-    user['user']['name'].should == 'paul'
-    user['user']['email'].should == 'paul@pauldix.net'
-    user['user']['bio'].should == 'rubyist'
+    expect(user['user']['name']).to eq 'paul'
+    expect(['user']['email']).to eq 'paul@pauldix.net'
+    expect(['user']['bio']).to eq 'rubyist'
   end
 
   it 'should return nil for a user not found' do

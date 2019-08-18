@@ -35,7 +35,7 @@ describe 'service' do
       get '/api/v1/users/paul' do
         last_response.should be_ok
         attributes = JSON.parse(last_response.body)['user']
-        attributes['name'].should == 'paul'
+        expect(attributes['name']).to eq 'paul'
       end
     end
 
@@ -43,7 +43,7 @@ describe 'service' do
       get '/api/v1/users/paul' do
         last_response.should be_ok
         attributes = JSON.parse(last_response.body)['user']
-        attributes['email'].should == 'paul@pauldix.net'
+        expect(attributes['email']).to eq 'paul@pauldix.net'
       end
     end
 
@@ -59,7 +59,7 @@ describe 'service' do
       get '/api/v1/users/paul' do
         last_response.should be_ok
         attributes = JSON.parse(last_response.body)['user']
-        attributes['bio'].should == 'rubyist'
+        expect(attributes['bio']).to eq 'rubyist'
       end
     end
 
@@ -79,13 +79,11 @@ describe 'service' do
         bio: 'southern belle'
       }.to_json
       last_response.should be_ok
-      # puts last_response.body
       get 'api/v1/users/trotter' # do
       attributes = JSON.parse(last_response.body)['user']
-      attributes['name'].should == 'trotter'
-      attributes['email'].should == 'no spam'
-      attributes['bio'].should == 'southern belle'
-      # end
+      expect(attributes['name']).to eq 'trotter'
+      expect(attributes['email']).to eq 'no spam'
+      expect(attributes['bio']).to eq 'southern belle'
       delete '/api/v1/users/trotter'
     end
   end
@@ -104,9 +102,9 @@ describe 'service' do
       last_response.should be_ok
       get '/api/v1/users/bryan' do
         attributes = JSON.parse(last_response.body)['user']
-        attributes['name'].should == 'bryan'
-        attributes['email'].should == 'no spam'
-        attributes['bio'].should == 'testing freak'
+        expect(attributes['name']).to eq 'bryan'
+        expect(attributes['email']).to eq 'no spam'
+        expect(attributes['bio']).to eq 'testing freak'
       end
     end
   end

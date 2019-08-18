@@ -6,6 +6,7 @@ require 'json'
 require 'active_record'
 require './models/user'
 
+# keep rubocop happy
 class User
   class << self; attr_accessor :base_uri end
 
