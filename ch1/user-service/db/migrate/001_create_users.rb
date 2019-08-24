@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # some documentation to shut up rubocop
-class CreateUsers < ActiveRecord::Migration
+class CreateUsers < ActiveRecord::Migration[4.2]
   def self.up
     create_table :users do |t|
       t.string :name
