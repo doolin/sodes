@@ -4,7 +4,7 @@ require File.dirname(__FILE__) + '/../client'
 
 describe 'client' do
   before(:each) do
-    User.base_uri = 'http://localhost:4567'
+    User.base_uri = 'http://localhost:9000'
   end
 
   it 'should get a user' do
